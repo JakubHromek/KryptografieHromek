@@ -4,11 +4,12 @@ def prvocislo(n):
         return False
     else:
         while n > m:
-            s = n % m 
+            s = n % m
             if s == 0:
                 return False
             m += 1
     return True
+
 
 def rozklad_cisla(p):
     m = 2
@@ -34,4 +35,6 @@ def euklidova_funkce(p):
             vysledek *= 1 - 1/n
         return round(vysledek)
 
-print(euklidova_funkce(360))
+
+if __name__ == "__main__":
+    print(euklidova_funkce(360))

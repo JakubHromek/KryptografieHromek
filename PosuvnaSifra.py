@@ -8,7 +8,6 @@ def posunuti(x, key, cipher):
 def cypher(sentence, key, d="None"):
     cipher = ""
     for x in sentence:
-        print(x)
         if x != " ":
             if d == "decipher":
                 cipher += posunuti(x, key, "-")
@@ -19,4 +18,6 @@ def cypher(sentence, key, d="None"):
     return cipher
 
 
-print(cypher(cypher("DNES JE KRASNY DEN", 5), 5, "decipher"))
+if __name__ == "__main__":
+    print(cypher("DNES JE KRASNY DEN", 5))
+    print(cypher(cypher("DNES JE KRASNY DEN", 5), 5, "decipher"))

@@ -27,4 +27,5 @@ def eukliduv_algoritmus(a, b):
     return pred_r, pred_x, pred_y
 
 
-print(eukliduv_algoritmus(252, 105))
+if __name__ == "__main__":
+    print(eukliduv_algoritmus(5, 26))
