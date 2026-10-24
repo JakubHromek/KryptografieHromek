@@ -1,5 +1,3 @@
-
-
 def prvocislo(n):
     m = 2
     if n < 2:
