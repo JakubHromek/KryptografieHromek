@@ -11,9 +11,10 @@ def analyza(text):
 
     for i in range(65, 91):
         slovnik[chr(i)] = 0
-        
+
     for n in text:
         slovnik[n] = slovnik.get(n, 0) + 1
+        
     for n in range(1, len(text)):
         slovnik[f"{text[n-1]}{text[n]}"] = slovnik.get(f"{text[n-1]}{text[n]}", 0) + 1
 
